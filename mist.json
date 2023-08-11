@@ -1,0 +1,5 @@
+{
+    "hooks": {
+        "main/action": "action"
+    }
+}
