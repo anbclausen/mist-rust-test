@@ -6,7 +6,7 @@ use mist_tools_rust::mist_tools::MistTools;
 use std::env;
 
 fn handle_action(_payload_bytes: Vec<u8>, _envelope: Envelope) -> Result<(), &'static str> {
-    reply_str_to_origin("Hello from Rust!", mime_types::TXT)
+    reply_str_to_origin("Hello from Rust", mime_types::TXT)
         .expect("Something went wrong in handle_action");
     Ok(())
 }
@@ -16,6 +16,6 @@ fn main() {
     mist::service(args)
         .unwrap()
         .handle("action", handle_action)
-        .init(|| Ok(println!("Hello, I started a Rust container")))
+        .init(|| Ok(println!("Hello, I started some Rust code")))
         .unwrap();
 }

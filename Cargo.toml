@@ -3,7 +3,11 @@ name = "mist-rust-test"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "app"
+path = "src/main.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-mist-tools-rust = { git = "https://github.com/anbclausen/mist-tools-rust.git", rev = "6e693ad" }
+mist-tools-rust = { git = "https://github.com/anbclausen/mist-tools-rust.git", branch = "abc" }
