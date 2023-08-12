@@ -10,4 +10,4 @@ path = "src/main.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-mist-tools-rust = { git = "https://github.com/anbclausen/mist-tools-rust.git", branch = "abc" }
+mist-tools = { git = "https://github.com/anbclausen/mist-tools-rust.git", branch = "abc-review" }
